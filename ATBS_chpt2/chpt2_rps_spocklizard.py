@@ -66,17 +66,6 @@ while True:
     ):
         print('You win!')
         wins += 1
-    elif (     #Parentheses group all loss conditions
-    (playerMove == 'ro' and computerMove == 'pa') or  # Rock vs. Paper
-    (playerMove == 'ro' and computerMove == 'sp') or  # Rock vs. Spock
-    (playerMove == 'pa' and computerMove == 'sc') or  # Paper vs. Scissors
-    (playerMove == 'pa' and computerMove == 'li') or  # Paper vs. Lizard
-    (playerMove == 'sc' and computerMove == 'ro') or  # Scissors vs. Rock
-    (playerMove == 'sc' and computerMove == 'sp') or  # Scissors vs. Spock
-    (playerMove == 'sp' and computerMove == 'li') or  # Spock vs. Lizard
-    (playerMove == 'sp' and computerMove == 'pa') or  # Spock vs. Paper
-    (playerMove == 'li' and computerMove == 'ro') or  # Lizard vs. Rock
-    (playerMove == 'li' and computerMove == 'sc')     # Lizard vs. Scissors
-    ):
+    else:
         print('You lose!')
         losses += 1
